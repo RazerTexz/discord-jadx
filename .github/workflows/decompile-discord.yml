@@ -1,0 +1,57 @@
+name: Decompile Discord
+
+on:
+  workflow_dispatch:
+
+jobs:
+  decompile-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: 21
+          distribution: temurin
+
+      - name: Get JADX
+        uses: dawidd6/action-download-artifact@v9
+        with:
+          repo: skylot/jadx
+          branch: master
+          workflow: build-artifacts.yml
+          name: .*(?<!win)$
+          name_is_regexp: true
+
+      - name: Get Discord
+        run: printf "FILE=$(curl -sSL --remote-name --write-out "%{filename_effective}" "https://aliucord.com/download/discord?v=126021")" >> "$GITHUB_ENV"
+
+      - name: Decompile
+        run: |
+          git rm -qrf decompiled 2>/dev/null || true
+          sh */bin/jadx \
+            --output-dir decompiled \
+            --export-gradle \
+            --show-bad-code \
+            --fs-case-sensitive \
+            --respect-bytecode-access-modifiers \
+            --no-inline-methods \
+            --no-inline-anonymous \
+            --no-inline-kotlin-lambda \
+            --use-source-name-as-class-name-alias if-better \
+            "$FILE" \
+            || true
+
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add decompiled
+          git commit -m "#$GITHUB_RUN_NUMBER" || exit 0
+          git push
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: decompiled
+          path: decompiled
