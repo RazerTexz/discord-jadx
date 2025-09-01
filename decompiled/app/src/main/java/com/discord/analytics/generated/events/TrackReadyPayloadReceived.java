@@ -1,0 +1,264 @@
+package com.discord.analytics.generated.events;
+
+import b.d.b.a.outline;
+import com.discord.analytics.generated.traits.TrackBase;
+import com.discord.analytics.generated.traits.TrackBase2;
+import com.discord.api.science.AnalyticsSchema;
+import d0.z.d.Intrinsics3;
+import kotlin.Metadata;
+
+/* compiled from: TrackReadyPayloadReceived.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\r\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\bX\b\u0086\b\u0018\u00002\u00020\u00012\u00020\u0002J\u0010\u0010\u0004\u001a\u00020\u0003HÖ\u0001¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0007\u001a\u00020\u0006HÖ\u0001¢\u0006\u0004\b\u0007\u0010\bJ\u001a\u0010\f\u001a\u00020\u000b2\b\u0010\n\u001a\u0004\u0018\u00010\tHÖ\u0003¢\u0006\u0004\b\f\u0010\rR\u001b\u0010\u000f\u001a\u0004\u0018\u00010\u000e8\u0006@\u0006¢\u0006\f\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\u0011\u0010\u0012R\u001b\u0010\u0014\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017R\u001b\u0010\u0018\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b\u0018\u0010\u0015\u001a\u0004\b\u0019\u0010\u0017R\u001b\u0010\u001a\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b\u001a\u0010\u0015\u001a\u0004\b\u001b\u0010\u0017R\u001b\u0010\u001c\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b\u001c\u0010\u0015\u001a\u0004\b\u001d\u0010\u0017R\u001b\u0010\u001e\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b\u001e\u0010\u0015\u001a\u0004\b\u001f\u0010\u0017R$\u0010!\u001a\u0004\u0018\u00010 8\u0016@\u0016X\u0096\u000e¢\u0006\u0012\n\u0004\b!\u0010\"\u001a\u0004\b#\u0010$\"\u0004\b%\u0010&R\u001b\u0010'\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b'\u0010\u0015\u001a\u0004\b(\u0010\u0017R\u001b\u0010)\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b)\u0010\u0015\u001a\u0004\b*\u0010\u0017R\u001b\u0010+\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b+\u0010\u0015\u001a\u0004\b,\u0010\u0017R\u001b\u0010-\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b-\u0010\u0015\u001a\u0004\b.\u0010\u0017R\u001b\u0010/\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b/\u0010\u0015\u001a\u0004\b0\u0010\u0017R\u001b\u00101\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b1\u0010\u0015\u001a\u0004\b2\u0010\u0017R\u001b\u00103\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b3\u0010\u0015\u001a\u0004\b4\u0010\u0017R\u001b\u00105\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b5\u0010\u0015\u001a\u0004\b6\u0010\u0017R\u001b\u00107\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b7\u0010\u0015\u001a\u0004\b8\u0010\u0017R\u001b\u00109\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b9\u0010\u0015\u001a\u0004\b:\u0010\u0017R\u001c\u0010;\u001a\u00020\u00038\u0016@\u0016X\u0096D¢\u0006\f\n\u0004\b;\u0010<\u001a\u0004\b=\u0010\u0005R\u001b\u0010>\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b>\u0010\u0015\u001a\u0004\b?\u0010\u0017R\u001b\u0010@\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b@\u0010\u0015\u001a\u0004\bA\u0010\u0017R\u001b\u0010B\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bB\u0010\u0015\u001a\u0004\bC\u0010\u0017R\u001b\u0010D\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bD\u0010\u0015\u001a\u0004\bE\u0010\u0017R\u001b\u0010F\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bF\u0010\u0015\u001a\u0004\bG\u0010\u0017R\u001b\u0010H\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bH\u0010\u0015\u001a\u0004\bI\u0010\u0017R\u001b\u0010J\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bJ\u0010\u0015\u001a\u0004\bK\u0010\u0017R\u001b\u0010L\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bL\u0010\u0015\u001a\u0004\bM\u0010\u0017R\u001b\u0010N\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bN\u0010\u0015\u001a\u0004\bO\u0010\u0017R\u001b\u0010P\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bP\u0010\u0015\u001a\u0004\bQ\u0010\u0017R\u001b\u0010R\u001a\u0004\u0018\u00010\u000b8\u0006@\u0006¢\u0006\f\n\u0004\bR\u0010S\u001a\u0004\bT\u0010UR\u001b\u0010V\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bV\u0010\u0015\u001a\u0004\bW\u0010\u0017R\u001b\u0010X\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bX\u0010\u0015\u001a\u0004\bY\u0010\u0017R\u001b\u0010Z\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bZ\u0010\u0015\u001a\u0004\b[\u0010\u0017R\u001b\u0010\\\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b\\\u0010\u0015\u001a\u0004\b]\u0010\u0017R\u001b\u0010^\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b^\u0010\u0015\u001a\u0004\b_\u0010\u0017R\u001b\u0010`\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\b`\u0010\u0015\u001a\u0004\ba\u0010\u0017R\u001b\u0010b\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bb\u0010\u0015\u001a\u0004\bc\u0010\u0017R\u001b\u0010d\u001a\u0004\u0018\u00010\u000b8\u0006@\u0006¢\u0006\f\n\u0004\bd\u0010S\u001a\u0004\bd\u0010UR\u001b\u0010e\u001a\u0004\u0018\u00010\u000e8\u0006@\u0006¢\u0006\f\n\u0004\be\u0010\u0010\u001a\u0004\bf\u0010\u0012R\u001b\u0010g\u001a\u0004\u0018\u00010\u000b8\u0006@\u0006¢\u0006\f\n\u0004\bg\u0010S\u001a\u0004\bg\u0010UR\u001b\u0010h\u001a\u0004\u0018\u00010\u000b8\u0006@\u0006¢\u0006\f\n\u0004\bh\u0010S\u001a\u0004\bi\u0010UR\u001b\u0010j\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bj\u0010\u0015\u001a\u0004\bk\u0010\u0017R\u001b\u0010l\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bl\u0010\u0015\u001a\u0004\bm\u0010\u0017R\u001b\u0010n\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bn\u0010\u0015\u001a\u0004\bo\u0010\u0017R\u001b\u0010p\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bp\u0010\u0015\u001a\u0004\bq\u0010\u0017R\u001b\u0010r\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\br\u0010\u0015\u001a\u0004\bs\u0010\u0017R\u001b\u0010t\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bt\u0010\u0015\u001a\u0004\bu\u0010\u0017R\u001b\u0010v\u001a\u0004\u0018\u00010\u00138\u0006@\u0006¢\u0006\f\n\u0004\bv\u0010\u0015\u001a\u0004\bw\u0010\u0017¨\u0006x"}, d2 = {"Lcom/discord/analytics/generated/events/TrackReadyPayloadReceived;", "Lcom/discord/api/science/AnalyticsSchema;", "Lcom/discord/analytics/generated/traits/TrackBaseReceiver;", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "packingAlgorithm", "Ljava/lang/CharSequence;", "getPackingAlgorithm", "()Ljava/lang/CharSequence;", "", "numChangedChannels", "Ljava/lang/Long;", "getNumChangedChannels", "()Ljava/lang/Long;", "guildRemainingDataSize", "getGuildRemainingDataSize", "identifyGuildsDurationMs", "getIdentifyGuildsDurationMs", "numChangedRoles", "getNumChangedRoles", "guildVoiceStatesSize", "getGuildVoiceStatesSize", "Lcom/discord/analytics/generated/traits/TrackBase;", "trackBase", "Lcom/discord/analytics/generated/traits/TrackBase;", "getTrackBase", "()Lcom/discord/analytics/generated/traits/TrackBase;", "setTrackBase", "(Lcom/discord/analytics/generated/traits/TrackBase;)V", "unpackDurationMs", "getUnpackDurationMs", "guildChannelsSize", "getGuildChannelsSize", "presencesSize", "getPresencesSize", "numGuildsWithChangedRoles", "getNumGuildsWithChangedRoles", "durationMsSinceConnectionStart", "getDurationMsSinceConnectionStart", "numGuildsWithChangedEmojis", "getNumGuildsWithChangedEmojis", "numGuildCategoryChannels", "getNumGuildCategoryChannels", "guildMembersSize", "getGuildMembersSize", "uncompressedByteSize", "getUncompressedByteSize", "identifyCompressedByteSize", "getIdentifyCompressedByteSize", "analyticsSchemaTypeName", "Ljava/lang/String;", "d", "userGuildSettingsSize", "getUserGuildSettingsSize", "usersSize", "getUsersSize", "durationMsSinceReadyPrimer", "getDurationMsSinceReadyPrimer", "guildRolesSize", "getGuildRolesSize", "guildEmojisSize", "getGuildEmojisSize", "numGuildChannels", "getNumGuildChannels", "numGuildsWithChangedChannels", "getNumGuildsWithChangedChannels", "guildPresencesSize", "getGuildPresencesSize", "numGuildsWithMetadataOmitted", "getNumGuildsWithMetadataOmitted", "numGuildsWithChannelsOmitted", "getNumGuildsWithChannelsOmitted", "hadAnyGuildInStore", "Ljava/lang/Boolean;", "getHadAnyGuildInStore", "()Ljava/lang/Boolean;", "identifyUncompressedByteSize", "getIdentifyUncompressedByteSize", "numGuildsWithChangedMetadata", "getNumGuildsWithChangedMetadata", "numChangedEmojis", "getNumChangedEmojis", "durationMsSinceReadyPrimerStart", "getDurationMsSinceReadyPrimerStart", "numGuildsWithRolesOmitted", "getNumGuildsWithRolesOmitted", "compressedByteSize", "getCompressedByteSize", "privateChannelsSize", "getPrivateChannelsSize", "isFastConnect", "compressionAlgorithm", "getCompressionAlgorithm", "isReconnect", "didForceClearGuildHashes", "getDidForceClearGuildHashes", "readStatesSize", "getReadStatesSize", "durationMsSinceIdentifyStart", "getDurationMsSinceIdentifyStart", "identifyTotalServerDurationMs", "getIdentifyTotalServerDurationMs", "relationshipsSize", "getRelationshipsSize", "numGuilds", "getNumGuilds", "durationMsSinceEmitStart", "getDurationMsSinceEmitStart", "identifyApiDurationMs", "getIdentifyApiDurationMs", "analytics_release"}, k = 1, mv = {1, 4, 2})
+/* loaded from: classes.dex */
+public final /* data */ class TrackReadyPayloadReceived implements AnalyticsSchema, TrackBase2 {
+    private TrackBase trackBase;
+    private final Long durationMsSinceConnectionStart = null;
+    private final Long durationMsSinceIdentifyStart = null;
+    private final Long durationMsSinceEmitStart = null;
+    private final Long identifyTotalServerDurationMs = null;
+    private final Long identifyApiDurationMs = null;
+    private final Long identifyGuildsDurationMs = null;
+    private final Long compressedByteSize = null;
+    private final Long uncompressedByteSize = null;
+    private final Long identifyCompressedByteSize = null;
+    private final Long identifyUncompressedByteSize = null;
+    private final CharSequence compressionAlgorithm = null;
+    private final CharSequence packingAlgorithm = null;
+    private final Long unpackDurationMs = null;
+    private final Boolean isReconnect = null;
+    private final Boolean isFastConnect = null;
+    private final Boolean didForceClearGuildHashes = null;
+    private final Long presencesSize = null;
+    private final Long usersSize = null;
+    private final Long readStatesSize = null;
+    private final Long privateChannelsSize = null;
+    private final Long userGuildSettingsSize = null;
+    private final Long relationshipsSize = null;
+    private final Long guildVoiceStatesSize = null;
+    private final Long guildChannelsSize = null;
+    private final Long guildMembersSize = null;
+    private final Long guildPresencesSize = null;
+    private final Long guildRolesSize = null;
+    private final Long guildEmojisSize = null;
+    private final Long guildRemainingDataSize = null;
+    private final Long numGuilds = null;
+    private final Long numGuildChannels = null;
+    private final Long numGuildCategoryChannels = null;
+    private final Long numGuildsWithMetadataOmitted = null;
+    private final Long numGuildsWithChannelsOmitted = null;
+    private final Long numGuildsWithRolesOmitted = null;
+    private final Long numGuildsWithChangedMetadata = null;
+    private final Long numGuildsWithChangedChannels = null;
+    private final Long numGuildsWithChangedRoles = null;
+    private final Long numGuildsWithChangedEmojis = null;
+    private final Long numChangedChannels = null;
+    private final Long numChangedRoles = null;
+    private final Long numChangedEmojis = null;
+    private final Boolean hadAnyGuildInStore = null;
+    private final Long durationMsSinceReadyPrimer = null;
+    private final Long durationMsSinceReadyPrimerStart = null;
+    private final transient String analyticsSchemaTypeName = "ready_payload_received";
+
+    @Override // com.discord.api.science.AnalyticsSchema
+    /* renamed from: d, reason: from getter */
+    public String getAnalyticsSchemaTypeName() {
+        return this.analyticsSchemaTypeName;
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof TrackReadyPayloadReceived)) {
+            return false;
+        }
+        TrackReadyPayloadReceived trackReadyPayloadReceived = (TrackReadyPayloadReceived) other;
+        return Intrinsics3.areEqual(this.durationMsSinceConnectionStart, trackReadyPayloadReceived.durationMsSinceConnectionStart) && Intrinsics3.areEqual(this.durationMsSinceIdentifyStart, trackReadyPayloadReceived.durationMsSinceIdentifyStart) && Intrinsics3.areEqual(this.durationMsSinceEmitStart, trackReadyPayloadReceived.durationMsSinceEmitStart) && Intrinsics3.areEqual(this.identifyTotalServerDurationMs, trackReadyPayloadReceived.identifyTotalServerDurationMs) && Intrinsics3.areEqual(this.identifyApiDurationMs, trackReadyPayloadReceived.identifyApiDurationMs) && Intrinsics3.areEqual(this.identifyGuildsDurationMs, trackReadyPayloadReceived.identifyGuildsDurationMs) && Intrinsics3.areEqual(this.compressedByteSize, trackReadyPayloadReceived.compressedByteSize) && Intrinsics3.areEqual(this.uncompressedByteSize, trackReadyPayloadReceived.uncompressedByteSize) && Intrinsics3.areEqual(this.identifyCompressedByteSize, trackReadyPayloadReceived.identifyCompressedByteSize) && Intrinsics3.areEqual(this.identifyUncompressedByteSize, trackReadyPayloadReceived.identifyUncompressedByteSize) && Intrinsics3.areEqual(this.compressionAlgorithm, trackReadyPayloadReceived.compressionAlgorithm) && Intrinsics3.areEqual(this.packingAlgorithm, trackReadyPayloadReceived.packingAlgorithm) && Intrinsics3.areEqual(this.unpackDurationMs, trackReadyPayloadReceived.unpackDurationMs) && Intrinsics3.areEqual(this.isReconnect, trackReadyPayloadReceived.isReconnect) && Intrinsics3.areEqual(this.isFastConnect, trackReadyPayloadReceived.isFastConnect) && Intrinsics3.areEqual(this.didForceClearGuildHashes, trackReadyPayloadReceived.didForceClearGuildHashes) && Intrinsics3.areEqual(this.presencesSize, trackReadyPayloadReceived.presencesSize) && Intrinsics3.areEqual(this.usersSize, trackReadyPayloadReceived.usersSize) && Intrinsics3.areEqual(this.readStatesSize, trackReadyPayloadReceived.readStatesSize) && Intrinsics3.areEqual(this.privateChannelsSize, trackReadyPayloadReceived.privateChannelsSize) && Intrinsics3.areEqual(this.userGuildSettingsSize, trackReadyPayloadReceived.userGuildSettingsSize) && Intrinsics3.areEqual(this.relationshipsSize, trackReadyPayloadReceived.relationshipsSize) && Intrinsics3.areEqual(this.guildVoiceStatesSize, trackReadyPayloadReceived.guildVoiceStatesSize) && Intrinsics3.areEqual(this.guildChannelsSize, trackReadyPayloadReceived.guildChannelsSize) && Intrinsics3.areEqual(this.guildMembersSize, trackReadyPayloadReceived.guildMembersSize) && Intrinsics3.areEqual(this.guildPresencesSize, trackReadyPayloadReceived.guildPresencesSize) && Intrinsics3.areEqual(this.guildRolesSize, trackReadyPayloadReceived.guildRolesSize) && Intrinsics3.areEqual(this.guildEmojisSize, trackReadyPayloadReceived.guildEmojisSize) && Intrinsics3.areEqual(this.guildRemainingDataSize, trackReadyPayloadReceived.guildRemainingDataSize) && Intrinsics3.areEqual(this.numGuilds, trackReadyPayloadReceived.numGuilds) && Intrinsics3.areEqual(this.numGuildChannels, trackReadyPayloadReceived.numGuildChannels) && Intrinsics3.areEqual(this.numGuildCategoryChannels, trackReadyPayloadReceived.numGuildCategoryChannels) && Intrinsics3.areEqual(this.numGuildsWithMetadataOmitted, trackReadyPayloadReceived.numGuildsWithMetadataOmitted) && Intrinsics3.areEqual(this.numGuildsWithChannelsOmitted, trackReadyPayloadReceived.numGuildsWithChannelsOmitted) && Intrinsics3.areEqual(this.numGuildsWithRolesOmitted, trackReadyPayloadReceived.numGuildsWithRolesOmitted) && Intrinsics3.areEqual(this.numGuildsWithChangedMetadata, trackReadyPayloadReceived.numGuildsWithChangedMetadata) && Intrinsics3.areEqual(this.numGuildsWithChangedChannels, trackReadyPayloadReceived.numGuildsWithChangedChannels) && Intrinsics3.areEqual(this.numGuildsWithChangedRoles, trackReadyPayloadReceived.numGuildsWithChangedRoles) && Intrinsics3.areEqual(this.numGuildsWithChangedEmojis, trackReadyPayloadReceived.numGuildsWithChangedEmojis) && Intrinsics3.areEqual(this.numChangedChannels, trackReadyPayloadReceived.numChangedChannels) && Intrinsics3.areEqual(this.numChangedRoles, trackReadyPayloadReceived.numChangedRoles) && Intrinsics3.areEqual(this.numChangedEmojis, trackReadyPayloadReceived.numChangedEmojis) && Intrinsics3.areEqual(this.hadAnyGuildInStore, trackReadyPayloadReceived.hadAnyGuildInStore) && Intrinsics3.areEqual(this.durationMsSinceReadyPrimer, trackReadyPayloadReceived.durationMsSinceReadyPrimer) && Intrinsics3.areEqual(this.durationMsSinceReadyPrimerStart, trackReadyPayloadReceived.durationMsSinceReadyPrimerStart);
+    }
+
+    public int hashCode() {
+        Long l = this.durationMsSinceConnectionStart;
+        int iHashCode = (l != null ? l.hashCode() : 0) * 31;
+        Long l2 = this.durationMsSinceIdentifyStart;
+        int iHashCode2 = (iHashCode + (l2 != null ? l2.hashCode() : 0)) * 31;
+        Long l3 = this.durationMsSinceEmitStart;
+        int iHashCode3 = (iHashCode2 + (l3 != null ? l3.hashCode() : 0)) * 31;
+        Long l4 = this.identifyTotalServerDurationMs;
+        int iHashCode4 = (iHashCode3 + (l4 != null ? l4.hashCode() : 0)) * 31;
+        Long l5 = this.identifyApiDurationMs;
+        int iHashCode5 = (iHashCode4 + (l5 != null ? l5.hashCode() : 0)) * 31;
+        Long l6 = this.identifyGuildsDurationMs;
+        int iHashCode6 = (iHashCode5 + (l6 != null ? l6.hashCode() : 0)) * 31;
+        Long l7 = this.compressedByteSize;
+        int iHashCode7 = (iHashCode6 + (l7 != null ? l7.hashCode() : 0)) * 31;
+        Long l8 = this.uncompressedByteSize;
+        int iHashCode8 = (iHashCode7 + (l8 != null ? l8.hashCode() : 0)) * 31;
+        Long l9 = this.identifyCompressedByteSize;
+        int iHashCode9 = (iHashCode8 + (l9 != null ? l9.hashCode() : 0)) * 31;
+        Long l10 = this.identifyUncompressedByteSize;
+        int iHashCode10 = (iHashCode9 + (l10 != null ? l10.hashCode() : 0)) * 31;
+        CharSequence charSequence = this.compressionAlgorithm;
+        int iHashCode11 = (iHashCode10 + (charSequence != null ? charSequence.hashCode() : 0)) * 31;
+        CharSequence charSequence2 = this.packingAlgorithm;
+        int iHashCode12 = (iHashCode11 + (charSequence2 != null ? charSequence2.hashCode() : 0)) * 31;
+        Long l11 = this.unpackDurationMs;
+        int iHashCode13 = (iHashCode12 + (l11 != null ? l11.hashCode() : 0)) * 31;
+        Boolean bool = this.isReconnect;
+        int iHashCode14 = (iHashCode13 + (bool != null ? bool.hashCode() : 0)) * 31;
+        Boolean bool2 = this.isFastConnect;
+        int iHashCode15 = (iHashCode14 + (bool2 != null ? bool2.hashCode() : 0)) * 31;
+        Boolean bool3 = this.didForceClearGuildHashes;
+        int iHashCode16 = (iHashCode15 + (bool3 != null ? bool3.hashCode() : 0)) * 31;
+        Long l12 = this.presencesSize;
+        int iHashCode17 = (iHashCode16 + (l12 != null ? l12.hashCode() : 0)) * 31;
+        Long l13 = this.usersSize;
+        int iHashCode18 = (iHashCode17 + (l13 != null ? l13.hashCode() : 0)) * 31;
+        Long l14 = this.readStatesSize;
+        int iHashCode19 = (iHashCode18 + (l14 != null ? l14.hashCode() : 0)) * 31;
+        Long l15 = this.privateChannelsSize;
+        int iHashCode20 = (iHashCode19 + (l15 != null ? l15.hashCode() : 0)) * 31;
+        Long l16 = this.userGuildSettingsSize;
+        int iHashCode21 = (iHashCode20 + (l16 != null ? l16.hashCode() : 0)) * 31;
+        Long l17 = this.relationshipsSize;
+        int iHashCode22 = (iHashCode21 + (l17 != null ? l17.hashCode() : 0)) * 31;
+        Long l18 = this.guildVoiceStatesSize;
+        int iHashCode23 = (iHashCode22 + (l18 != null ? l18.hashCode() : 0)) * 31;
+        Long l19 = this.guildChannelsSize;
+        int iHashCode24 = (iHashCode23 + (l19 != null ? l19.hashCode() : 0)) * 31;
+        Long l20 = this.guildMembersSize;
+        int iHashCode25 = (iHashCode24 + (l20 != null ? l20.hashCode() : 0)) * 31;
+        Long l21 = this.guildPresencesSize;
+        int iHashCode26 = (iHashCode25 + (l21 != null ? l21.hashCode() : 0)) * 31;
+        Long l22 = this.guildRolesSize;
+        int iHashCode27 = (iHashCode26 + (l22 != null ? l22.hashCode() : 0)) * 31;
+        Long l23 = this.guildEmojisSize;
+        int iHashCode28 = (iHashCode27 + (l23 != null ? l23.hashCode() : 0)) * 31;
+        Long l24 = this.guildRemainingDataSize;
+        int iHashCode29 = (iHashCode28 + (l24 != null ? l24.hashCode() : 0)) * 31;
+        Long l25 = this.numGuilds;
+        int iHashCode30 = (iHashCode29 + (l25 != null ? l25.hashCode() : 0)) * 31;
+        Long l26 = this.numGuildChannels;
+        int iHashCode31 = (iHashCode30 + (l26 != null ? l26.hashCode() : 0)) * 31;
+        Long l27 = this.numGuildCategoryChannels;
+        int iHashCode32 = (iHashCode31 + (l27 != null ? l27.hashCode() : 0)) * 31;
+        Long l28 = this.numGuildsWithMetadataOmitted;
+        int iHashCode33 = (iHashCode32 + (l28 != null ? l28.hashCode() : 0)) * 31;
+        Long l29 = this.numGuildsWithChannelsOmitted;
+        int iHashCode34 = (iHashCode33 + (l29 != null ? l29.hashCode() : 0)) * 31;
+        Long l30 = this.numGuildsWithRolesOmitted;
+        int iHashCode35 = (iHashCode34 + (l30 != null ? l30.hashCode() : 0)) * 31;
+        Long l31 = this.numGuildsWithChangedMetadata;
+        int iHashCode36 = (iHashCode35 + (l31 != null ? l31.hashCode() : 0)) * 31;
+        Long l32 = this.numGuildsWithChangedChannels;
+        int iHashCode37 = (iHashCode36 + (l32 != null ? l32.hashCode() : 0)) * 31;
+        Long l33 = this.numGuildsWithChangedRoles;
+        int iHashCode38 = (iHashCode37 + (l33 != null ? l33.hashCode() : 0)) * 31;
+        Long l34 = this.numGuildsWithChangedEmojis;
+        int iHashCode39 = (iHashCode38 + (l34 != null ? l34.hashCode() : 0)) * 31;
+        Long l35 = this.numChangedChannels;
+        int iHashCode40 = (iHashCode39 + (l35 != null ? l35.hashCode() : 0)) * 31;
+        Long l36 = this.numChangedRoles;
+        int iHashCode41 = (iHashCode40 + (l36 != null ? l36.hashCode() : 0)) * 31;
+        Long l37 = this.numChangedEmojis;
+        int iHashCode42 = (iHashCode41 + (l37 != null ? l37.hashCode() : 0)) * 31;
+        Boolean bool4 = this.hadAnyGuildInStore;
+        int iHashCode43 = (iHashCode42 + (bool4 != null ? bool4.hashCode() : 0)) * 31;
+        Long l38 = this.durationMsSinceReadyPrimer;
+        int iHashCode44 = (iHashCode43 + (l38 != null ? l38.hashCode() : 0)) * 31;
+        Long l39 = this.durationMsSinceReadyPrimerStart;
+        return iHashCode44 + (l39 != null ? l39.hashCode() : 0);
+    }
+
+    public String toString() {
+        StringBuilder sbU = outline.U("TrackReadyPayloadReceived(durationMsSinceConnectionStart=");
+        sbU.append(this.durationMsSinceConnectionStart);
+        sbU.append(", durationMsSinceIdentifyStart=");
+        sbU.append(this.durationMsSinceIdentifyStart);
+        sbU.append(", durationMsSinceEmitStart=");
+        sbU.append(this.durationMsSinceEmitStart);
+        sbU.append(", identifyTotalServerDurationMs=");
+        sbU.append(this.identifyTotalServerDurationMs);
+        sbU.append(", identifyApiDurationMs=");
+        sbU.append(this.identifyApiDurationMs);
+        sbU.append(", identifyGuildsDurationMs=");
+        sbU.append(this.identifyGuildsDurationMs);
+        sbU.append(", compressedByteSize=");
+        sbU.append(this.compressedByteSize);
+        sbU.append(", uncompressedByteSize=");
+        sbU.append(this.uncompressedByteSize);
+        sbU.append(", identifyCompressedByteSize=");
+        sbU.append(this.identifyCompressedByteSize);
+        sbU.append(", identifyUncompressedByteSize=");
+        sbU.append(this.identifyUncompressedByteSize);
+        sbU.append(", compressionAlgorithm=");
+        sbU.append(this.compressionAlgorithm);
+        sbU.append(", packingAlgorithm=");
+        sbU.append(this.packingAlgorithm);
+        sbU.append(", unpackDurationMs=");
+        sbU.append(this.unpackDurationMs);
+        sbU.append(", isReconnect=");
+        sbU.append(this.isReconnect);
+        sbU.append(", isFastConnect=");
+        sbU.append(this.isFastConnect);
+        sbU.append(", didForceClearGuildHashes=");
+        sbU.append(this.didForceClearGuildHashes);
+        sbU.append(", presencesSize=");
+        sbU.append(this.presencesSize);
+        sbU.append(", usersSize=");
+        sbU.append(this.usersSize);
+        sbU.append(", readStatesSize=");
+        sbU.append(this.readStatesSize);
+        sbU.append(", privateChannelsSize=");
+        sbU.append(this.privateChannelsSize);
+        sbU.append(", userGuildSettingsSize=");
+        sbU.append(this.userGuildSettingsSize);
+        sbU.append(", relationshipsSize=");
+        sbU.append(this.relationshipsSize);
+        sbU.append(", guildVoiceStatesSize=");
+        sbU.append(this.guildVoiceStatesSize);
+        sbU.append(", guildChannelsSize=");
+        sbU.append(this.guildChannelsSize);
+        sbU.append(", guildMembersSize=");
+        sbU.append(this.guildMembersSize);
+        sbU.append(", guildPresencesSize=");
+        sbU.append(this.guildPresencesSize);
+        sbU.append(", guildRolesSize=");
+        sbU.append(this.guildRolesSize);
+        sbU.append(", guildEmojisSize=");
+        sbU.append(this.guildEmojisSize);
+        sbU.append(", guildRemainingDataSize=");
+        sbU.append(this.guildRemainingDataSize);
+        sbU.append(", numGuilds=");
+        sbU.append(this.numGuilds);
+        sbU.append(", numGuildChannels=");
+        sbU.append(this.numGuildChannels);
+        sbU.append(", numGuildCategoryChannels=");
+        sbU.append(this.numGuildCategoryChannels);
+        sbU.append(", numGuildsWithMetadataOmitted=");
+        sbU.append(this.numGuildsWithMetadataOmitted);
+        sbU.append(", numGuildsWithChannelsOmitted=");
+        sbU.append(this.numGuildsWithChannelsOmitted);
+        sbU.append(", numGuildsWithRolesOmitted=");
+        sbU.append(this.numGuildsWithRolesOmitted);
+        sbU.append(", numGuildsWithChangedMetadata=");
+        sbU.append(this.numGuildsWithChangedMetadata);
+        sbU.append(", numGuildsWithChangedChannels=");
+        sbU.append(this.numGuildsWithChangedChannels);
+        sbU.append(", numGuildsWithChangedRoles=");
+        sbU.append(this.numGuildsWithChangedRoles);
+        sbU.append(", numGuildsWithChangedEmojis=");
+        sbU.append(this.numGuildsWithChangedEmojis);
+        sbU.append(", numChangedChannels=");
+        sbU.append(this.numChangedChannels);
+        sbU.append(", numChangedRoles=");
+        sbU.append(this.numChangedRoles);
+        sbU.append(", numChangedEmojis=");
+        sbU.append(this.numChangedEmojis);
+        sbU.append(", hadAnyGuildInStore=");
+        sbU.append(this.hadAnyGuildInStore);
+        sbU.append(", durationMsSinceReadyPrimer=");
+        sbU.append(this.durationMsSinceReadyPrimer);
+        sbU.append(", durationMsSinceReadyPrimerStart=");
+        return outline.G(sbU, this.durationMsSinceReadyPrimerStart, ")");
+    }
+}

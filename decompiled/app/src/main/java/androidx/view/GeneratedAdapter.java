@@ -1,0 +1,10 @@
+package androidx.view;
+
+import androidx.annotation.RestrictTo;
+import androidx.view.Lifecycle;
+
+@RestrictTo({RestrictTo.Scope.LIBRARY_GROUP_PREFIX})
+/* loaded from: classes.dex */
+public interface GeneratedAdapter {
+    void callMethods(LifecycleOwner lifecycleOwner, Lifecycle.Event event, boolean z2, MethodCallsLogger methodCallsLogger);
+}

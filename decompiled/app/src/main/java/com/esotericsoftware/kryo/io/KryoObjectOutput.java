@@ -1,0 +1,31 @@
+package com.esotericsoftware.kryo.io;
+
+import com.esotericsoftware.kryo.Kryo;
+import com.esotericsoftware.kryo.KryoException;
+import java.io.IOException;
+import java.io.ObjectOutput;
+
+/* loaded from: classes.dex */
+public class KryoObjectOutput extends KryoDataOutput implements ObjectOutput {
+    private final Kryo kryo;
+
+    public KryoObjectOutput(Kryo kryo, Output output) {
+        super(output);
+        this.kryo = kryo;
+    }
+
+    @Override // java.io.ObjectOutput, java.lang.AutoCloseable
+    public void close() throws IOException, KryoException {
+        this.output.close();
+    }
+
+    @Override // java.io.ObjectOutput
+    public void flush() throws IOException, KryoException {
+        this.output.flush();
+    }
+
+    @Override // java.io.ObjectOutput
+    public void writeObject(Object obj) throws IOException {
+        this.kryo.writeClassAndObject(this.output, obj);
+    }
+}

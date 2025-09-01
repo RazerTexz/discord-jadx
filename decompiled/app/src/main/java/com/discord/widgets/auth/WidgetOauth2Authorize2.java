@@ -1,0 +1,25 @@
+package com.discord.widgets.auth;
+
+import android.view.View;
+import com.discord.app.AppActivity;
+import kotlin.Metadata;
+
+/* compiled from: WidgetOauth2Authorize.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\u0010\u0007\u001a\u00020\u00032\u000e\u0010\u0002\u001a\n \u0001*\u0004\u0018\u00010\u00000\u0000H\n¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"Landroid/view/View;", "kotlin.jvm.PlatformType", "it", "", "onClick", "(Landroid/view/View;)V", "com/discord/widgets/auth/WidgetOauth2Authorize$onViewBound$2$1", "<anonymous>"}, k = 3, mv = {1, 4, 2})
+/* renamed from: com.discord.widgets.auth.WidgetOauth2Authorize$onViewBound$$inlined$forEach$lambda$1, reason: use source file name */
+/* loaded from: classes2.dex */
+public final class WidgetOauth2Authorize2 implements View.OnClickListener {
+    public final /* synthetic */ WidgetOauth2Authorize this$0;
+
+    public WidgetOauth2Authorize2(WidgetOauth2Authorize widgetOauth2Authorize) {
+        this.this$0 = widgetOauth2Authorize;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(View view) throws Exception {
+        AppActivity appActivity = this.this$0.getAppActivity();
+        if (appActivity != null) {
+            appActivity.onBackPressed();
+        }
+    }
+}

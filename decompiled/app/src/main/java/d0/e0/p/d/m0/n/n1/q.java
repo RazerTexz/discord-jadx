@@ -1,0 +1,7 @@
+package d0.e0.p.d.m0.n.n1;
+
+/* compiled from: TypeSystemContext.kt */
+/* loaded from: classes3.dex */
+public interface q {
+    boolean identicalArguments(i iVar, i iVar2);
+}

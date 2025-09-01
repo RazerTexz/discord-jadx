@@ -1,0 +1,30 @@
+package com.discord.utilities.analytics;
+
+import android.content.SharedPreferences;
+import com.discord.utilities.cache.SharedPreferencesProvider;
+import d0.z.d.Lambda;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+
+/* compiled from: InstallReferrer.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0003\u001a\u00020\u0000H\n¢\u0006\u0004\b\u0001\u0010\u0002"}, d2 = {"Landroid/content/SharedPreferences;", "invoke", "()Landroid/content/SharedPreferences;", "<anonymous>"}, k = 3, mv = {1, 4, 2})
+/* renamed from: com.discord.utilities.analytics.InstallReferrer$sharedPreferences$2, reason: use source file name */
+/* loaded from: classes2.dex */
+public final class InstallReferrer3 extends Lambda implements Function0<SharedPreferences> {
+    public static final InstallReferrer3 INSTANCE = new InstallReferrer3();
+
+    public InstallReferrer3() {
+        super(0);
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public /* bridge */ /* synthetic */ SharedPreferences invoke() {
+        return invoke();
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // kotlin.jvm.functions.Function0
+    public final SharedPreferences invoke() {
+        return SharedPreferencesProvider.INSTANCE.get();
+    }
+}

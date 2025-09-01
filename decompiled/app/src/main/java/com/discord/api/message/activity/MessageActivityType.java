@@ -1,0 +1,64 @@
+package com.discord.api.message.activity;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* compiled from: MessageActivityType.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0010\b\n\u0002\b\r\b\u0086\u0001\u0018\u0000 \t2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\tB\u0011\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0007\u0010\bR\u0019\u0010\u0003\u001a\u00020\u00028\u0006@\u0006¢\u0006\f\n\u0004\b\u0003\u0010\u0004\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000e¨\u0006\u000f"}, d2 = {"Lcom/discord/api/message/activity/MessageActivityType;", "", "", "apiInt", "I", "getApiInt", "()I", "<init>", "(Ljava/lang/String;II)V", "Companion", "JOIN", "SPECTATE", "LISTEN", "WATCH", "REQUEST", "discord_api"}, k = 1, mv = {1, 4, 2})
+/* loaded from: classes.dex */
+public enum MessageActivityType {
+    JOIN(1),
+    SPECTATE(2),
+    LISTEN(3),
+    WATCH(4),
+    REQUEST(5);
+
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    private final int apiInt;
+
+    /* compiled from: MessageActivityType.kt */
+    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0007\u0010\bJ\u0017\u0010\u0005\u001a\u00020\u00042\b\u0010\u0003\u001a\u0004\u0018\u00010\u0002¢\u0006\u0004\b\u0005\u0010\u0006¨\u0006\t"}, d2 = {"Lcom/discord/api/message/activity/MessageActivityType$Companion;", "", "", "int", "Lcom/discord/api/message/activity/MessageActivityType;", "a", "(Ljava/lang/Integer;)Lcom/discord/api/message/activity/MessageActivityType;", "<init>", "()V", "discord_api"}, k = 1, mv = {1, 4, 2})
+    public static final class Companion {
+        public Companion() {
+        }
+
+        public final MessageActivityType a(Integer num) {
+            MessageActivityType messageActivityType = MessageActivityType.JOIN;
+            int apiInt = messageActivityType.getApiInt();
+            if (num != null && num.intValue() == apiInt) {
+                return messageActivityType;
+            }
+            MessageActivityType messageActivityType2 = MessageActivityType.SPECTATE;
+            int apiInt2 = messageActivityType2.getApiInt();
+            if (num == null || num.intValue() != apiInt2) {
+                messageActivityType2 = MessageActivityType.LISTEN;
+                int apiInt3 = messageActivityType2.getApiInt();
+                if (num == null || num.intValue() != apiInt3) {
+                    messageActivityType2 = MessageActivityType.WATCH;
+                    int apiInt4 = messageActivityType2.getApiInt();
+                    if (num == null || num.intValue() != apiInt4) {
+                        messageActivityType2 = MessageActivityType.REQUEST;
+                        int apiInt5 = messageActivityType2.getApiInt();
+                        if (num == null || num.intValue() != apiInt5) {
+                            return messageActivityType;
+                        }
+                    }
+                }
+            }
+            return messageActivityType2;
+        }
+
+        public Companion(DefaultConstructorMarker defaultConstructorMarker) {
+        }
+    }
+
+    MessageActivityType(int i) {
+        this.apiInt = i;
+    }
+
+    public final int getApiInt() {
+        return this.apiInt;
+    }
+}

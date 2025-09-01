@@ -1,0 +1,40 @@
+package com.discord.stores;
+
+import android.content.SharedPreferences;
+import d0.z.d.Intrinsics3;
+import d0.z.d.Lambda;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+
+/* compiled from: StoreNotices.kt */
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000\f\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0004\u001a\u00060\u0000j\u0002`\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"", "Lcom/discord/primitives/Timestamp;", "invoke", "()J", "<anonymous>"}, k = 3, mv = {1, 4, 2})
+/* renamed from: com.discord.stores.StoreNotices$firstUseTimestamp$2, reason: use source file name */
+/* loaded from: classes2.dex */
+public final class StoreNotices3 extends Lambda implements Function0<Long> {
+    public final /* synthetic */ StoreNotices this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public StoreNotices3(StoreNotices storeNotices) {
+        super(0);
+        this.this$0 = storeNotices;
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public /* bridge */ /* synthetic */ Long invoke() {
+        return Long.valueOf(invoke2());
+    }
+
+    /* renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final long invoke2() {
+        long j = this.this$0.getPrefsSessionDurable().getLong("CACHE_KEY_FIRST_USE", -1L);
+        if (j != -1) {
+            return j;
+        }
+        long jCurrentTimeMillis = StoreNotices.access$getClock$p(this.this$0).currentTimeMillis();
+        SharedPreferences.Editor editorEdit = this.this$0.getPrefsSessionDurable().edit();
+        Intrinsics3.checkNotNullExpressionValue(editorEdit, "editor");
+        editorEdit.putLong("CACHE_KEY_FIRST_USE", jCurrentTimeMillis);
+        editorEdit.apply();
+        return jCurrentTimeMillis;
+    }
+}
